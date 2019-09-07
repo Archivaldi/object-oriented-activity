@@ -9,6 +9,8 @@ function Rectangle(h,w, n, s) {
     Shape.call(this, n, s);
 };
 
+Rectangle.prototype = Object.create(Shape.prototype);
+
 Rectangle.prototype.area = function(){
     console.log(this.heigth * this.width);
 };
